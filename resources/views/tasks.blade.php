@@ -42,7 +42,10 @@
                 <div class="panel-body">
                     <table class="table table-striped task-table">
                         <thead>
-                            <th>Task</th>
+                            <th>Task.
+
+                                
+                            </th>
                             <th>&nbsp;</th>
                         </thead>
                         <tbody>

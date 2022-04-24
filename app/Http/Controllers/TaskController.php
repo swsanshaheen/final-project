@@ -36,11 +36,14 @@ class Taskcontroller extends Controller
  }
 
 public function update(Request $request ,$id){
-  $data=array();
-  $data['name']=$request->name;
-  DB::table('tasks')->where('id',$id)->update($data);
-  $tasks=Task::all();
-  return view('tasks' , compact('tasks'));
+  //$data=array();
+  //$data['name']=$request->name;
+  //DB::table('tasks')->where('id',$id)->update($data);
+  //$tasks=Task::all();
+  //return view('tasks' , compact('tasks'));
+  $task = Task::find($id);
+  $task -> name = $request ->name;
+  $task -> save();
 
 }
 
